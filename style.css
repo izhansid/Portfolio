@@ -1,0 +1,439 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 15px 30px;
+     position: sticky;
+    top: 0px;
+    z-index: 100;
+
+    
+}
+
+.navbar a {
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    transform: scale(1.5);
+}
+
+body {
+    background-color:  #f1f1f1;;
+    
+}
+
+#portfolio {
+    font-style: italic;
+    margin-left: 40px;
+} 
+
+@keyframes slideIn1 {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.slideIn1 {
+    animation-name: slideIn1;
+    animation-duration: 3s;
+    padding-top: 30px;
+}
+
+.intro {
+background-color: whitesmoke;
+border-radius: 10px;
+width: 50%;
+padding: 20px;
+}
+
+.intro h2 { 
+    font-size: 30px;
+    margin-bottom: 20px;
+ }
+
+.intro p{
+line-height: 30px;
+}
+
+ 
+ @keyframes slideIn2 {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slideIn2 {
+    animation-name: slideIn2;
+    animation-duration: 3s;
+}
+    
+.home {
+    
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    
+}
+
+
+  #image {  
+    width: 200px;
+    height: 300px;
+    display: flex;
+    border-radius: 20px;
+    object-fit: cover;
+    
+ }  
+
+ .resume {
+    background-color:beige;
+    width: 50%;
+    padding: 20px;
+    margin-left: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    text-align: center;
+ }
+
+ .resume a {
+    background-color: gray;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.resume a:hover {
+    background-color: darkgrey;
+    transform: scale(1.1);
+}
+
+ @keyframes slideInPhoto {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slideInPhoto {
+    animation-name: slideInPhoto;
+    animation-duration: 3s;
+}
+
+.aboutme {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+ .about {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 40px;
+    width: 45%;
+    margin-left: 40px;
+ }
+
+
+ .about h2 { 
+    font-size: 30px;
+    margin-bottom: 20px;
+ }
+
+.about p{
+line-height: 20px;
+}
+
+ 
+
+ @keyframes slideIn3 {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slideIn3 {
+    animation-name: slideIn3;
+    animation-duration: 3s;
+
+ }
+ 
+
+ .skills {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    margin-right: 30px;
+ }
+
+ .skills h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+ }
+
+@keyframes slideIn4 {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slideIn4 {
+    animation-name: slideIn4;
+    animation-duration: 3s;
+}
+
+
+ .skills p {
+    line-height: 20px;
+ }
+
+ .myprojects {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 50%;
+    padding: 40px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;  
+ }
+
+ .myprojects h2 {
+    align-items: center;
+ }
+
+ .project-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+ }
+
+ 
+ .projects-heading {
+    text-align: center;
+ }
+
+ .project1,
+ .project2 {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+ }
+
+ .project1:hover,
+ .project2:hover {
+    transform: scale(1.03);
+ }
+
+
+
+ .education {
+    background-color: whitesmoke;
+    padding: 40px;
+    width: 50%;
+    border-radius: 10px;
+    margin: 20px;
+ }
+
+    .education h2 { 
+    font-size: 30px;
+    
+ }
+
+.education ul {
+line-height: 20px;
+}
+
+
+ .contact {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    gap: 20px;
+ }
+
+ .contactme {
+    border: 1px solid black;
+    border-radius: 5px;
+    
+ }
+
+ .contact ul {
+    list-style: none;
+    padding: 0;
+}
+.contact li {
+    margin-top: 3px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    color: azure;
+    text-align: center; 
+    background-color:black ;
+    border-radius: 10px;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.footer-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.footer h3 {
+   font-style: italic;
+}
+
+.footer a {
+    display: inline-block;
+}
+
+.footer a:hover {
+    transform: scale(1.5);
+}
+
+@media (max-width: 768px) {
+
+    body {
+        background-color: lightgray;
+    }
+
+    .intro h2 {
+        font-size: 25px;
+    }
+
+    .intro p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .navbar {
+        flex-wrap: wrap;
+    }
+    .home {
+        flex-direction: column;
+    }
+
+    .aboutme {
+        flex-direction: column;
+    }
+
+     .project1 h2 {
+        font-size: 25px;
+    }
+
+    .project1 p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+
+    .project2 h2 {
+        font-size: 25px;
+    }
+
+    .project2 p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+
+    .project-container{
+        flex-direction: column;
+    }
+     .project1,
+    .project2 {
+        width: 100%;
+    }
+
+
+
+
+
+    .intro {
+        width: 90%;
+    }
+
+    .about {
+        width: 90%;
+        margin-left: 0px;
+    }
+
+    .skills {
+        width: 90%;
+        margin:10px;
+        margin-right: 0px;
+    }
+
+    .myprojects {
+        width: 90%;
+    }
+
+   
+    .education {
+        width: 90%;
+    }
+
+    .contact {
+        width: 90%;
+    }
+
+    .contact a {
+    overflow-wrap: break-word;
+}
+}
